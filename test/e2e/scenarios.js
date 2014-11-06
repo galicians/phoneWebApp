@@ -28,7 +28,7 @@ describe('PhoneCat App', function() {
     })
 
     it('should displey the user input in the title instantly', function() {
-      
+      var query = element(by.model('query'))
       query.clear();
       expect(browser.getTitle()).toMatch(/Google Phone Gallery:\s*$/);
 
