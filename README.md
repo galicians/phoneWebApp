@@ -9,7 +9,7 @@ exists. Here is a historical reference: [Google Phone Gallery on WayBack](http:/
 ## Workings of the application
 
 - The application filesystem layout structure is based on the [angular-seed] project.
-- There is no dynamic backend (no application server) for this application. Instead we fake the
+- There is no dynamic backend (no application server) for this application. Instead we place a Json file in the app folder that is requested it using $http.
 
 ### step-0
 
@@ -178,7 +178,7 @@ Requires a webserver that serves the application.
         filtersSpec.js     --> specs for filters
         servicesSpec.js    --> specs for services
 
-## Links of interest:
+
 
 
 [angular-seed]: https://github.com/angular/angular-seed
