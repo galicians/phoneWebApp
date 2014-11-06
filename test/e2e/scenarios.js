@@ -17,17 +17,17 @@ describe('PhoneCat App', function() {
       var phoneList = element.all(by.repeater('phone in phones'))
       var query = element(by.model('query'))
 
-      expect(phoneList.count()).toBe(3)
+      expect(phoneList.count()).toBe(20)
 
       query.sendKeys('nexus')
       expect(phoneList.count()).toBe(1)
 
       query.clear()
       query.sendKeys('motorola')
-      expect(phoneList.count()).toBe(2)
+      expect(phoneList.count()).toBe(8)
     })
 
-    it('should displey the user input in the title instantly', function() {
+    it('should display the user input in the title instantly', function() {
       var query = element(by.model('query'))
       query.clear();
       expect(browser.getTitle()).toMatch(/Google Phone Gallery:\s*$/);
